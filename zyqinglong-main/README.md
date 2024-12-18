@@ -1,14 +1,3 @@
-# zyqinglong
-青龙自用库
-
----
-如果有更好的薅羊毛项目可以Issues提交GitHub项目地址和文件名我会添加到本库，我会弄一个自动更新上去同步其他库项目
----
-
-
----
-可以Issues提交需要薅羊毛的应用-加上能薅到什么羊毛（在我需要的情况下，有能力一定写出来）
----
 
 每个脚本里面都有写有需要的具体东西和变量名
 
@@ -37,6 +26,3 @@ https://linhua.lanzoup.com/iCOcD0yqavmj
 定时规则：0 30 * * * *
 文件后缀：py js
 ```
-
-## 访问量
-![Visitor Count](https://profile-counter.glitch.me/zyqinglong/count.svg)
