@@ -31,7 +31,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 IS_DEV = False
 
-if os.path.isfile('notify.py'):
+if os.path.isfile('deepsea-main/notify.py'):
     from notify import send
     print("加载通知服务成功！")
 else:
