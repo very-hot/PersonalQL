@@ -5,7 +5,7 @@
 ```
 名称：SCRIPT
 类型：公开仓库
-链接：ql repo https://github.com/very-hot/PersonalQL.git "" "Cloudflare" "" "" ""
+链接：ql repo https://github.com/very-hot/PersonalQL.git "" "" "" "" ""
 定时类型：crontab
 定时规则：随便
 文件后缀：py|js
