@@ -7,9 +7,10 @@
 # const $ = new Env('夸克云盘签到')
 import os
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import urllib3
+from urllib3.exceptions import InsecureRequestWarning
 # 禁用安全请求警告
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+urllib3.disable_warnings(InsecureRequestWarning)
 
 IS_DEV = False
 if os.path.isfile('DEV_ENV.py'):
