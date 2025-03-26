@@ -119,11 +119,23 @@ class Tieba(CheckIn):
 
 
 if __name__ == "__main__":
-
-    TIEBA_NAME = "BDTB"
+    APP_NAME = "百度贴吧签到"
+    ENV_NAME = "BDTB"
+    print(f'''
+✨✨✨ {APP_NAME}签到抽奖✨✨✨
+✨ 功能：
+      签到
+      抽奖
+参数示例：18888888888@123456
+✨ 设置青龙变量：
+export {ENV_NAME}参数值'多账号#或&分割
+export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
+✨ 推荐cron：0 9 * * *
+✨✨✨ @Author CHERWIN✨✨✨
+''')
 
     TIEBA_COOKIE = {
-        "cookie": TIEBA_NAME
+        "cookie": ENV_NAME
     }
     _check_item = TIEBA_COOKIE
     print(Tieba(check_item=_check_item).main())
