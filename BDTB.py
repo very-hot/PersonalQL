@@ -120,7 +120,7 @@ class Tieba(CheckIn):
 
 if __name__ == "__main__":
 
-    TIEBA_NAME = "BDTB"
+    TIEBA_NAME = 'BDTB'
 
     TIEBA_COOKIE = {
         "cookie": TIEBA_NAME
