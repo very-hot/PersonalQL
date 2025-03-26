@@ -1,4 +1,10 @@
-# 简单定义 CheckIn 类，若实际有具体实现，请替换
+"""
+百度贴吧签到
+
+export BDTB=""
+
+cron: 30 6 * * *
+"""
 class CheckIn:
     pass
 
