@@ -122,16 +122,13 @@ if __name__ == "__main__":
     APP_NAME = "百度贴吧签到"
     ENV_NAME = "BDTB"
     print(f'''
-✨✨✨ {APP_NAME}签到抽奖✨✨✨
+✨✨✨ {APP_NAME}签到✨✨✨
 ✨ 功能：
       签到
-      抽奖
-参数示例：18888888888@123456
 ✨ 设置青龙变量：
-export {ENV_NAME}参数值'多账号#或&分割
+export {ENV_NAME}参数值
 export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
 ✨ 推荐cron：0 9 * * *
-✨✨✨ @Author CHERWIN✨✨✨
 ''')
 
     TIEBA_COOKIE = {
