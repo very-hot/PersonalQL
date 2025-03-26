@@ -12,9 +12,28 @@ import hashlib
 import json
 import os
 import re
-
 import requests
 
+# 定义环境变量名
+BDTB_ENV_NAME = 'BDTB'
+
+# 尝试获取环境变量值
+bdtb_cookie_str = os.environ.get(BDTB_ENV_NAME)
+
+# 检查变量值是否存在
+if not bdtb_cookie_str:
+    print(f"未填写{BDTB_ENV_NAME}变量，请在环境变量中配置该变量。")
+    # 这里可以根据需求选择退出程序或者进行其他处理
+    exit()
+
+# 处理变量值
+bdtb_cookie = {}
+for item in bdtb_cookie_str.split("; "):
+    if "=" in item:
+        key, value = item.split("=", 1)
+        bdtb_cookie[key] = value
+
+# 后续使用bdtb_cookie进行操作
 
 class Tieba(CheckIn):
     name = "百度贴吧"
@@ -125,8 +144,8 @@ class Tieba(CheckIn):
 
 
 if __name__ == "__main__":
-    APP_NAME = "百度贴吧签到"
-    ENV_NAME = "BDTB"
+    APP_NAME = "百度贴吧"
+    ENV_NAME = bdtb_cookie
     print(f'''
 ✨✨✨ {APP_NAME}签到✨✨✨
 ✨ 功能：
