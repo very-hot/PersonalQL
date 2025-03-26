@@ -120,13 +120,8 @@ class Tieba(CheckIn):
 
 if __name__ == "__main__":
 
-    TIEBA_NAME = 'BDTB'
-    config = {
-        "TIEBA": [
-            {
-                "cookie": "TIEBA_NAME"
-            }
-        ]
+    TIEBA_NAME = {
+        "cookie": 'BDTB'
     }
-    _check_item = config.get("TIEBA", [])[0]
+    _check_item = TIEBA_NAME
     print(Tieba(check_item=_check_item).main())
