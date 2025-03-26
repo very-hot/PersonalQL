@@ -124,7 +124,7 @@ if __name__ == "__main__":
     config = {
         "TIEBA": [
             {
-                "cookie": TIEBA_NAME
+                "cookie": "TIEBA_NAME"
             }
         ]
     }
